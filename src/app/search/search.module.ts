@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -12,7 +13,8 @@ import { ResiSearchItemScoreComponent } from './resi-search/resi-search-item/res
   imports: [
     CommonModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   declarations: [    
     ResiSearchComponent,

@@ -1,0 +1,43 @@
+.container-flex {
+    min-height: calc(100vh - 3rem);
+}
+
+.slogan {
+    margin-top: 3vw;
+    font-size: 3rem;
+}
+
+.text-success {
+    color: rgb(40, 167, 69);
+}
+
+.lead {
+    margin-right: 0;
+    font-size: 3rem;
+}
+
+.logo {
+    background: url(/assets/img/logo.jpg);
+    background-size: cover;
+    width: 120px;
+    height: 110px;
+    border: 0;
+}
+
+.nav-tabs .nav-item {
+    font-weight: bold;
+    font-size: 110%;
+    letter-spacing: .1rem;
+}
+
+footer {
+    height: 3rem;
+    font-family: lato,sans-serif;
+    line-height: 3rem;
+    font-size: .8em;
+    background-color: #efefef;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}

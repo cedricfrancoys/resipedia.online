@@ -1,4 +1,63 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <resi-search></resi-search>
-</div>
+<div class="container-flex">
+    <div class="row">
+        <div class="container">
+          <div class="row">
+                <div class="col-12 col-sm-4 col-md-2">
+                    <div class="col-12 text-center text-md-left"><div class="d-inline-block logo"></div></div>
+                    <div class="col-12 text-center text-md-left"><div class="d-inline-block lead">ResiPedia</div></div>
+                </div>
+                <div class="slogan col-12 col-sm-8 col-md-10 text-center">
+                  Plus de 
+                  <span class="font-weight-bold text-success">3000</span>
+                  ressources en <strong>Creative Commons</strong> pour 
+                  <span class="text-success"> la résilience</span>
+                  <div class="col-12">
+                    <button class="btn btn-lg btn-success font-weight-bold mt-1"><i class="fa fa-users" aria-hidden="true"></i> Participer</button>
+                    <button class="btn btn-lg btn-success font-weight-bold mt-1"><i class="fa fa-download" aria-hidden="true"></i> Télécharger</button>
+                    <button class="btn btn-lg btn-success font-weight-bold mt-1"><i class="fa fa-question" aria-hidden="true"></i> En savoir plus</button>                  
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div> 
+  
+    <div class="row mt-4">
+      <div class="container">    
+        <div class="col">
+          <div>
+            <ul role="tablist" class="nav nav-tabs justify-content-start">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/recherche" routerLinkActive="active" role="tab" id="ngb-tab-0">
+                    <i aria-hidden="true" class="fa fa-search"></i> Rechercher
+                </a>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/question" routerLinkActive="active" role="tab" id="ngb-tab-1">
+                  <i aria-hidden="true" class="fa fa-comment-o"></i> Poser une question
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/document" routerLinkActive="active" role="tab" id="ngb-tab-2">
+                  <i aria-hidden="true" class="fa fa-book"></i> Ajouter un document
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/article" routerLinkActive="active" role="tab" id="ngb-tab-3">
+                  <i aria-hidden="true" class="fa fa-file-text-o"></i> Proposer un article    
+                </a>
+              </li>
+              -->
+            </ul>
+          </div>
+          <div class="mt-4">
+            <router-outlet></router-outlet>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+  
+  </div>
+  <footer>ResiPedia est supportée avec <i class="fa fa-heart" style="color: var(--red);" aria-hidden="true"></i> par <a href="https://www.resiway.org">resiway.org</a>, et mise en <i class="fa fa-creative-commons font-weight-bold" aria-hidden="true"></i> par plus de 6.000 contributeurs et contributrices</footer>  
