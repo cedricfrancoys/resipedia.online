@@ -1,0 +1,10 @@
+<div class="resi-search-item">
+  <div class="container-fluid">
+    <a class="row" href="{{urlRoot}}/{{result.url}}">
+      <div class="col col-12 col-md-10 d-block title"><i class="fa" aria-hidden="true" [ngClass]="getClassFromType(result.type)"></i>&nbsp;&nbsp;<strong>{{result.title}}</strong></div>
+      <div class="col col-1 d-none d-md-block pl-md-0"><resi-search-item-score [icon]="'score'" [value]="result.score"></resi-search-item-score></div>
+      <div class="col col-1 d-none d-md-block pl-md-0"><resi-search-item-score [icon]="'views'" [value]="result.count_views"></resi-search-item-score></div>
+      <div class="col col-12 d-none d-md-block excerpt">{{result.description}}</div>      
+    </a>
+  </div>  
+</div>

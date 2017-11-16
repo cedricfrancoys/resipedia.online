@@ -1,0 +1,26 @@
+.resi-search-item {
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+.resi-search-item a.row {
+    text-decoration: none;
+    color: black;
+}
+
+.resi-search-item .title {
+    margin-bottom: 10px;
+    font-size: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.resi-search-item .excerpt {
+    font-size: 75%;
+    word-wrap: break-word;        
+    overflow-wrap: break-word; 
+    white-space: normal;
+    max-width: 80%;
+}
+    
