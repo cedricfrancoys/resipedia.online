@@ -21,7 +21,7 @@ export class SearchService {
       return Observable.of([]);
     }
 
-    let url = 'http://www.resiway.gdn/index.php?get=resiway_search';
+    let url = 'https://www.resiway.org/index.php?get=resiway_search';
 
     return this.http.get(url, {
       params: new HttpParams().set('q', term)
@@ -43,7 +43,7 @@ export class ResiSearchComponent implements OnInit {
   public query: string;
   public results: Array<SearchResult> = [];
 
-  public overlay: Object = {
+  public overlay: any = {
     visible: false,
     show: function (state) {
       this.visible = state;
