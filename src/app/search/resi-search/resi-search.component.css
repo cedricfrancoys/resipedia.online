@@ -68,7 +68,7 @@
 :host /deep/ .dropdown-menu::after {    
     display: block;
     cursor: pointer;
-    content: "Plus...";
+    content: "Voit tous les résultats...";
     font-family: latoitalic,lato,sans-serif;
     font-size: 1.4em;
     margin-top: 8px;

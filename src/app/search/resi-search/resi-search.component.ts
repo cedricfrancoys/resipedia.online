@@ -21,7 +21,7 @@ export class SearchService {
       return Observable.of([]);
     }
 
-    let url = 'https://www.resiway.org/index.php?get=resiway_search';
+    let url = 'http://www.resiway.gdn/index.php?get=resiway_search';
 
     return this.http.get(url, {
       params: new HttpParams().set('q', term)
