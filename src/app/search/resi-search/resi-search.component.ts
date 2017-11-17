@@ -9,6 +9,7 @@ import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
+import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/switchMap';
 
 
@@ -42,6 +43,7 @@ export class ResiSearchComponent implements OnInit {
   public readonly urlRoot: string = 'https://www.resiway.org';
   public query: string;
   public results: Array<SearchResult> = [];
+  public searching: boolean = false;
 
   public overlay: any = {
     visible: false,
@@ -62,6 +64,7 @@ export class ResiSearchComponent implements OnInit {
     return text$
     .debounceTime(300)
     .distinctUntilChanged()
+    .do(() => this.searching = true)
     .switchMap(query =>   
               this.searchService.search(query)              
               .map( (response) => {
@@ -73,8 +76,8 @@ export class ResiSearchComponent implements OnInit {
                       return [];
                     }
               )  
-    );
-
+    )
+    .do(() => this.searching = false);
   }
 
 

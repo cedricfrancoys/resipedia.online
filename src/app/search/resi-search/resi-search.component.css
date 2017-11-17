@@ -68,7 +68,7 @@
 :host /deep/ .dropdown-menu::after {    
     display: block;
     cursor: pointer;
-    content: "Voit tous les résultats...";
+    content: "Voir tous les résultats...";
     font-family: latoitalic,lato,sans-serif;
     font-size: 1.4em;
     margin-top: 8px;
@@ -148,4 +148,46 @@
     display: block !important;
     opacity: 0;
     z-index: -1;
+}
+
+
+@keyframes loading {
+    0% {
+        transform-origin: 100% 100%;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: 100% 100%;
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    width: 24px;
+    height: 24px;
+    margin: 5px 5px 0 0;
+}
+.loading:before {
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: 12;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+
+.loading:after {
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: 11;
+    width: 12px;
+    height: 12px;
+    border-radius: 200px 0 0;
+    background: linear-gradient(45deg, transparent 0, #459ad7 50%, #459ad7 100%);
+    animation: loading 0.5s linear infinite;
 }

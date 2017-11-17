@@ -14,7 +14,8 @@
         [ngbTypeahead]="initSearch"
         [resultTemplate]="rt"
         [inputFormatter]="queryFormatter" />
-  <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
+  <span class="input-group-addon" [hidden]="searching"><i class="fa fa-search" aria-hidden="true"></i></span>
+  <span class="input-group-addon loading" [hidden]="!searching"></span>
 </div>
 <div>
   <div style="position: relative;">
