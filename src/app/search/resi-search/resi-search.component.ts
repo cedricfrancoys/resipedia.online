@@ -69,7 +69,7 @@ export class ResiSearchComponent implements OnInit {
               this.searchService.search(query)              
               .map( (response) => {
                       this.results = response['result']; 
-                      return this.results.slice(0, 4);
+                      return (this.results.length > 4)?this.results.slice(0, 4):this.results;
                     }, 
                     (error) => {
                       console.log('error querying server'); 
